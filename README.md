@@ -1,2 +1,2 @@
 # Softwarepraktikum
-Implementation of "Das verrückte Labyrinth" from Scratch
+Java-based implementation of "Das verrückte Labyrinth" + AI 
