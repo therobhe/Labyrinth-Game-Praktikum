@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane prefWidth="1920.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.client.ui.views.GameConfigurationView">
+	<columnConstraints>
+    	<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+    	<RowConstraints maxHeight="250.0" minHeight="65.0" prefHeight="65.0" vgrow="SOMETIMES" />
+    	<RowConstraints maxHeight="1000.0" minHeight="10.0" prefHeight="800.0" vgrow="SOMETIMES" />
+    	<RowConstraints minHeight="90.0" prefHeight="90.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+    	<HBox fx:id="topHBox" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" GridPane.columnSpan="2">
+        	<children>
+         		<Button fx:id="navigateBackButton" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" onAction="#navigateBack" prefHeight="32.0" prefWidth="32.0">
+               		<HBox.margin>
+                  		<Insets left="10.0" />
+               		</HBox.margin>
+               		<graphic>
+                  		<ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     		<image>
+                        		<Image url="/assets/ArrowLeft.png" />
+                     		</image>
+                  		</ImageView>
+               		</graphic>
+            	</Button>
+         	</children>
+         <GridPane.margin>
+            <Insets left="4.0" right="4.0" />
+         </GridPane.margin>
+      	</HBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+        	<children>
+            	<Label text="Allgemeines">
+                	<VBox.margin>
+                    	<Insets left="20.0" top="20.0" />
+                	</VBox.margin>
+                    <font>
+                       	<Font size="14.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="200.0">
+                	<children>
+                    	<Label prefWidth="135.0" text="Servername">
+                        	<HBox.margin>
+                            	<Insets top="4.0" />
+                        	</HBox.margin>
+                     	</Label>
+                    	<TextField fx:id="serverNameTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                              	<Insets left="20.0" />
+                           	</HBox.margin>
+                    	</TextField>
+                    </children>
+                  	<VBox.margin>
+                    	<Insets left="40.0" top="20.0" />
+                	</VBox.margin>
+                </HBox>
+              	<HBox prefHeight="30.0" prefWidth="200.0">
+                  	<children>
+                        <Label prefWidth="135.0" text="Maximale Spiellänge">
+                           	<HBox.margin>
+                              	<Insets left="40.0" top="4.0" />
+                           	</HBox.margin>
+                        </Label>
+                      	<TextField fx:id="maxGameLengthTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                              	<Insets left="20.0" />
+                           	</HBox.margin>
+                       	</TextField>
+                    </children>
+                    <VBox.margin>
+                    	<Insets top="10.0" />
+                  	</VBox.margin>
+                </HBox>
+                <HBox prefHeight="30.0" prefWidth="200.0">
+                  	<children>
+                        <Label prefWidth="135.0" text="Maximale Zuglänge">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </Label>
+                        <TextField fx:id="maxTurnLengthTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                              	<Insets left="20.0" />
+                           	</HBox.margin>
+                       	</TextField>
+                    </children>
+                   	<VBox.margin>
+                      	<Insets left="40.0" top="10.0" />
+                  	</VBox.margin>
+                </HBox>
+              	<Label text="Spielfeldeinstellungen">
+                    <VBox.margin>
+                      	<Insets left="20.0" top="50.0" />
+                    </VBox.margin>
+                    <font>
+                      	<Font size="14.0" />
+                   	</font>
+                </Label>
+               	<HBox prefHeight="30.0" prefWidth="200.0">
+                    <VBox.margin>
+                      	<Insets left="40.0" top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label prefWidth="135.0" text="Spielfeldgröße">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </Label>
+                        <TextField fx:id="boardSizeTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                              	<Insets left="20.0" />
+                           	</HBox.margin>
+                    	</TextField>
+                  	</children>
+                </HBox>
+               	<HBox prefHeight="30.0" prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets left="40.0" top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label prefWidth="135.0" text="Anzahl der Schätze">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </Label>
+                        <TextField fx:id="treasureCountTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                            	<Insets left="20.0" />
+                        	</HBox.margin>
+                    	</TextField>
+                	</children>
+            	</HBox>
+          	</children>
+          	<GridPane.margin>
+              	<Insets left="50.0" top="20.0" />
+        	</GridPane.margin>
+        </VBox>
+       	<VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          	<children>
+               	<Label text="Boni-Konfiguration">
+                    <VBox.margin>
+                    	<Insets left="20.0" top="20.0" />
+                    </VBox.margin>
+                   	<font>
+                      	<Font size="14.0" />
+                	</font>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="200.0">
+                    <children>
+                        <CheckBox fx:id="shiftSolidEnabledCheckBox" mnemonicParsing="false" prefWidth="200.0" text="Feste Felder verschieben">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="beamEnabledCheckBox" mnemonicParsing="false" prefWidth="200.0" text="Teleport">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                    	</CheckBox>
+                    </children>
+                    <VBox.margin>
+                    	<Insets left="40.0" top="20.0" />
+                	</VBox.margin>
+                </HBox>
+            	<HBox prefHeight="30.0" prefWidth="200.0">
+                    <children>
+                    	<CheckBox fx:id="shiftTwiceEnabledCheckBox" mnemonicParsing="false" prefWidth="200.0" text="2x Schieben">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="swapEnabledCheckBox" mnemonicParsing="false" prefWidth="200.0" text="Platz tauschen">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                         	</HBox.margin>
+                    	</CheckBox>
+                    </children>
+               		<VBox.margin>
+                        <Insets left="40.0" top="10.0" />
+                	</VBox.margin>
+                </HBox>
+              	<HBox prefHeight="30.0" prefWidth="200.0">
+              		<children>
+                        <Label prefWidth="135.0" text="Boni-Wharscheinlichkeit">
+                           	<HBox.margin>
+                              	<Insets top="4.0" />
+                           	</HBox.margin>
+                        </Label>
+                        <TextField fx:id="boniProbabilityTextField" prefWidth="400.0">
+                           	<HBox.margin>
+                              	<Insets left="20.0" />
+                           	</HBox.margin>
+                    	</TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="40.0" top="10.0" />
+                	</VBox.margin>
+            	</HBox>
+            </children>
+           	<GridPane.margin>
+            	<Insets top="20.0" />
+        	</GridPane.margin>
+        </VBox>
+		<HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        	<children>
+            	<Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" prefHeight="45.0" prefWidth="220.0" text="Speichern">
+            	    <HBox.margin>
+                    	<Insets left="40.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#navigateBack" prefHeight="45.0" prefWidth="220.0" text="Abbrechen">
+                    <HBox.margin>
+                    	<Insets left="20.0" />
+                    </HBox.margin>
+            	</Button>
+            </children>
+    	</HBox>
+	</children>
+</GridPane>

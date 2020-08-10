@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.client.ui.views.GameEndView">
+<center>
+	<VBox alignment="BOTTOM_CENTER" BorderPane.alignment="CENTER">
+   <children>
+            <HBox alignment="BOTTOM_LEFT" maxHeight="150.0" maxWidth="900.0" minHeight="150.0" minWidth="900.0" prefHeight="150.0" prefWidth="900.0">
+               <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="106.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="player2NameLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                  </Label>
+                  <Label fx:id="player2ScoreLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+                     <HBox.margin>
+                        <Insets bottom="-50.0" left="220.0" />
+                     </HBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="106.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="player1NameLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="player1ScoreLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+            </VBox>
+            <VBox fx:id="player3VBox" alignment="BOTTOM_CENTER" prefHeight="106.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="player3NameLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                  </Label>
+                  <Label fx:id="player3ScoreLabel" alignment="CENTER" >
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+                     <HBox.margin>
+                        <Insets bottom="-80.0" left="80.0" />
+                     </HBox.margin>
+            </VBox>
+            <VBox fx:id="player4VBox" alignment="BOTTOM_CENTER" prefWidth="100.0">
+               <children>
+                  <Label fx:id="player4NameLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="player4ScoreLabel" alignment="CENTER" >
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+                     <HBox.margin>
+                        <Insets bottom="-230.0" left="70.0" />
+                     </HBox.margin>
+            </VBox>
+               </children>
+            </HBox>
+      <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="false" preserveRatio="true">
+      	<image>
+           <Image url="@../../../../assets/podest.png" />
+        </image>
+      </ImageView>
+   </children>
+</VBox>
+</center>
+<bottom>
+<HBox alignment="CENTER_LEFT" minHeight="90.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="90.0">
+   <children>
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#next" prefHeight="60.0" prefWidth="220.0" text="Weiter">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Button>
+   </children>
+         <BorderPane.margin>
+            <Insets right="40.0" />
+         </BorderPane.margin>
+</HBox>
+</bottom>
+   <top>
+<Label alignment="TOP_CENTER" text="Spielergebnisse" BorderPane.alignment="CENTER">
+   <font>
+      <Font size="40.0" />
+   </font>
+</Label>
+   </top>
+</BorderPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.client.ui.views.MainMenuView">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+         <image>
+            <Image url="/assets/title.png" />
+         </image>
+      </ImageView>
+      <BorderPane StackPane.alignment="CENTER">
+      	<center>
+      		<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         		<children>
+            		<Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="300.0" 
+            				text="Spiel beitreten" fx:id="startGameButton" onAction="#joinGame">
+               		<VBox.margin>
+                  		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               		</VBox.margin>
+                     <font>
+                        <Font size="16.0"/>
+                     </font>
+            		</Button>
+            		<Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="300.0" 
+            				text="Server starten" fx:id="startServerButton" onAction="#startServer">
+               		<VBox.margin>
+                  		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               		</VBox.margin>
+               		<font>
+                        <Font size="16.0"/>
+                    </font>
+            		</Button>
+            		<Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="300.0" 
+            				text="Achievements" fx:id="showAchievementsButton" onAction="#showAchievements">
+               		<VBox.margin>
+                  		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               		</VBox.margin>
+               		<font>
+                        <Font size="16.0"/>
+                    </font>
+            		</Button>
+            		<Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="300.0" 
+            				text="Spiel beenden" fx:id="exitGameButton" onAction="#exitGame">
+               		<VBox.margin>
+                  		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               		</VBox.margin>
+               		<font>
+                        <Font size="16.0"/>
+                    </font>
+            		</Button>
+         		</children>
+         		<BorderPane.margin>
+            		<Insets top="40.0" />
+         		</BorderPane.margin>
+      			</VBox>
+   			</center>
+      </BorderPane>
+   </children>
+</StackPane>

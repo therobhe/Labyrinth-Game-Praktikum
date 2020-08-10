@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.client.ui.views.GameServerSelectionView">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+         	<Button fx:id="navigateBackButton" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" onAction="#navigateBack" prefHeight="32.0" prefWidth="32.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/assets/ArrowLeft.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label text="Suchtext">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="searchTextTextField" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+            <Button fx:id="refreshButton" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" onAction="#refreshList" prefHeight="32.0" prefWidth="32.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/assets/Refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="serverTable" prefHeight="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="serverNameColumn" minWidth="100.0" prefWidth="-1.0" text="Servername" />
+          <TableColumn fx:id="ipAddressColumn" minWidth="100.0" prefWidth="-1.0" text="IP-Adresse" />
+          <TableColumn fx:id="portNumberColumn" minWidth="100.0" prefWidth="-1.0" text="Portnummer" />
+          <TableColumn fx:id="statusColumn" minWidth="100.0" prefWidth="-1.0" text="Status" />
+          <TableColumn fx:id="playerCountColumn" minWidth="100.0" prefWidth="-1.0" text="Spieleranzahl" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+</BorderPane>

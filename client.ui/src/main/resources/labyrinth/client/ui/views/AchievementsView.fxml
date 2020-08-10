@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labyrinth.client.ui.views.AchievementsView">
+<top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+         	<Button fx:id="navigateBackButton" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" onAction="#navigateBack" prefHeight="32.0" prefWidth="32.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/assets/ArrowLeft.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" focusTraversable="false" BorderPane.alignment="CENTER">
+         <content>
+      	<VBox fx:id="achievementsVBox" alignment="TOP_CENTER" maxHeight="1020.0" minHeight="1020.0" prefHeight="1020.0">
+         <children>
+            <HBox alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <children>
+                  <VBox fx:id="playedGamesAchievement1VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="playedGamesAchievement1NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="playedGamesAchievement1DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="playedGamesAchievement1ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="playedGamesAchievement1ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="playedGamesAchievement2VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="playedGamesAchievement2NameLabel" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="playedGamesAchievement2DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="playedGamesAchievement2ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="playedGamesAchievement2ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="playedGamesAchievement3VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="playedGamesAchievement3NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="playedGamesAchievement3DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="playedGamesAchievement3ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="playedGamesAchievement3ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="playedGamesAchievement4VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="playedGamesAchievement4NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="playedGamesAchievement4DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="playedGamesAchievement4ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="playedGamesAchievement4ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="playedGamesAchievement5VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="playedGamesAchievement5NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="playedGamesAchievement5DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="playedGamesAchievement5ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="playedGamesAchievement5ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="wonGamesAchievement1VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="wonGamesAchievement1NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="wonGamesAchievement1DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="wonGamesAchievement1ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="wonGamesAchievement1ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="wonGamesAchievement2VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="wonGamesAchievement2NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="wonGamesAchievement2DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="wonGamesAchievement2ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="wonGamesAchievement2ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="wonGamesAchievement3VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="wonGamesAchievement3NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="wonGamesAchievement3DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="wonGamesAchievement3ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="wonGamesAchievement3ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="wonGamesAchievement4VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="wonGamesAchievement4NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="wonGamesAchievement4DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="wonGamesAchievement4ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="wonGamesAchievement4ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="wonGamesAchievement5VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="wonGamesAchievement5NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="wonGamesAchievement5DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="wonGamesAchievement5ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="wonGamesAchievement5ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="aquiredScoreAchievement1VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="aquiredScoreAchievement1NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="aquiredScoreAchievement1DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="aquiredScoreAchievement1ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="aquiredScoreAchievement1ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="aquiredScoreAchievement2VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="aquiredScoreAchievement2NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="aquiredScoreAchievement2DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="aquiredScoreAchievement2ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.8">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="aquiredScoreAchievement2ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="aquiredScoreAchievement3VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="aquiredScoreAchievement3NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="aquiredScoreAchievement3DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="aquiredScoreAchievement3ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="aquiredScoreAchievement3ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="aquiredScoreAchievement4VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="aquiredScoreAchievement4NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="aquiredScoreAchievement4DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="aquiredScoreAchievement4ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="aquiredScoreAchievement4ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="aquiredScoreAchievement5VBox" alignment="TOP_CENTER" minHeight="280.0" prefHeight="280.0" prefWidth="225.0">
+                     <children>
+                        <Label fx:id="aquiredScoreAchievement5NameLabel">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="aquiredScoreAchievement5DescriptionLabel" alignment="TOP_CENTER" prefHeight="125.0" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ProgressBar fx:id="aquiredScoreAchievement5ProgressBar" prefHeight="25.0" prefWidth="200.0" progress="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="aquiredScoreAchievement5ProgressLabel">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

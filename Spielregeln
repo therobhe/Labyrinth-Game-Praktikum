@@ -1,0 +1,28 @@
+Spielregeln und Ziel
+
+Das Spielbrett besteht aus einer Menge von Teilfeldern, von denen einige fest sind und einige verschiebbar. Es ist immer ein loses Teilfeld vorhanden, das nicht mehr auf das Spielbrett passt.
+
+Zu Beginn wählt jeder Spieler eine Spielfigur und erhält eine Missionszielkarte. Darauf ist ein Symbol abgebildet, das den zu findenden Schatz verkörpert. Die Missionszielkarten sind geheim, das heißt, jeder Spieler kann nur seine eigenen sehen.
+
+Die Schätze verteilen sich auf das gesamte Spielbrett und sind für alle Spieler sichtbar. Ziel ist es, im Spielverlauf möglichst viele der auf den Missionszielkarten abgebildeten Schätze zu sammeln.
+
+Pro Spielrunde erhält jeder Spieler einen Spielzug. Jeder Spielzug unterteilt sich in zwei Abschnitte: 
+1. Das lose Teilfeld an der gewünschten Stelle in das Spielbrett schieben.
+2. Die Spielfigur setzen.
+
+Das Einschieben des Teilfelds kann an beliebiger Stelle erfolgen, solange sich keine festen Teilfelder auf der zu schiebenden Reihe befinden. Jeder Spieler darf das Teilfeld nur um eine Position einschieben, sodass am Ende des Zugs wieder nur ein loses Teilfeld übrig bleibt. Pro Zug darf nur einmal geschoben werden. Wird ein Teilfeld herausgeschoben, auf dem gerade ein Spieler steht, wird dieses Feld automatisch auf der gegenüberliegenden Seite wieder eingeschoben.
+
+Anschließend kann die Spielfigur mittels einer einzigen Bewegung auf ein beliebiges Feld gezogen werden, das mittels eines ununterbrochenen Gangs erreicht werden kann. Auf einem Feld darf sich maximal ein Spieler befinden. Es ist erlaubt, Felder zu passieren, auf denen bereits ein anderer Spieler steht.Wird der Spielzug auf einem Feld beendet, auf dem der auf der Missionszielkarte abgebildete Schatz liegt, gilt dieser als gefunden. Der Spieler kann dann eine neue Karte ziehen.
+
+Am Ende gewinnt der Spieler, der zuerst all seine Schätze gesammelt hat oder nach Ablauf der Spielzeit die meisten Schätze sammeln konnte.
+
+Boni
+
+Während des Spiels tauchen verschiedene Boni auf, die die Spieler einsammeln können. Sammelt ein Spieler einen solchen Bonus ein, darf er diesen entsprechend seiner Funktion zu jeder Zeit einsetzen. 
+Folgende Boni existieren:
+	Beamen: Der Spieler kann sich einmalig an eine beliebige Stelle Beamen
+	Feste Gänge verschieben: Der Spieler darf einmalig auch feste Gänge verschieben
+	Tauschen: Der Spieler darf einmalig seine Position mit der eines anderen Spielern tauschen
+	Zweimal Schieben: Der Spieler darf einmalig zwei Schiebeaktionen ausführen
+
+Jeder auftauchende Bonus kann von nur einem Spieler eingesammelt und verwendet werden.
