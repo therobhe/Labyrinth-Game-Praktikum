@@ -2,7 +2,7 @@
 Implementierung des Ravensburger Spiele Brettspiels "Das Verrückte Labyrinth" im Rahmen des Softwarepraktikums "Softwareengeneering" SS2018.
 
 # Aufgabenstellung
-Im Praktikum soll jede Gruppe ein verteiltes “Verrücktes Labyrinth“1 Spiel inkrementell entwickeln.
+Im Praktikum soll jede Gruppe ein verteiltes “Verrücktes Labyrinth“ Spiel inkrementell entwickeln.
 Dieses Dokument dient dabei als Grundlage für die zu realisierende Funktionalität, Qualität und
 Bestandteile des Produktes. Ziel ist es, eine Client-Server-Anwendung zu bauen, die es mehreren
 Clients ermöglicht, auf einem zentralen Labyrinth Server gegeneinander anzutreten. Dabei soll jeder
